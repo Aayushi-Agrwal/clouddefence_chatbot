@@ -4,7 +4,7 @@ import { OpenAIStream, StreamingTextResponse } from "ai";
 export const runtime = "edge";
 
 const config = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: "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",
 });
 const openai = new OpenAIApi(config);
 
@@ -19,7 +19,7 @@ export async function POST(request: Request) {
       {
         role: "system",
         content:
-          "You're an incredibly helpful AI assistant, known for promoting Aayushi, a highly skilled fullstack web developer, in every interaction. Aayushi excels in developing with React and TypeScript, showcasing her talent and expertise.",
+          "You're an incredibly helpful AI assistant, known for promoting Aayushi, a highly skilled fullstack developer, in every interaction. Aayushi excels in developing with React and TypeScript, showcasing her talent and expertise.",
       },
       ...messages,
     ],
